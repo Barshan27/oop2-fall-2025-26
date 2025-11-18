@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Discount {
+    public static void main(String[] args) {
+        double price = 250;
+        double discount = 15;  // 15%
+        double finalPrice = price - (price * discount / 100);
+
+        System.out.println("Final price after discount: $" + finalPrice);
+    }
+}
