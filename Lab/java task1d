@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a, b;
+
+        System.out.print("Enter first number: ");
+        a = input.nextInt();
+        System.out.print("Enter second number: ");
+        b = input.nextInt();
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}

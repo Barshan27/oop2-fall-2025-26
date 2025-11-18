@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class AverageScore  {
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+        double s1, s2, s3, avg;
+System.out.print("Enter the score of first student : ");
+        s1 = input.nextDouble();
+        System.out.print("Enter score of second student : ");
+        s2 = input.nextDouble();
+        System.out.print("Enter score of third student : ");
+        s3 = input.nextDouble();
+
+        avg = (s1 + s2 + s3) / 3;
+        System.out.printf("Average score = % .2f\n", avg);
+    }
